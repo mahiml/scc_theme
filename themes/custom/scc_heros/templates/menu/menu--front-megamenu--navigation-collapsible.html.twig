@@ -1,0 +1,95 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+#}
+{% import _self as menus %}
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, 0) }}
+
+{% macro menu_links(items, menu_level) %}
+    {% import _self as menus %}
+    {% if items %}
+        {% set running_count = 0 %}
+        {% set div_close = 0 %}
+        {% for item in items %}
+            {% if item.below %}
+                {% if menu_level == 0 %}
+                    {% if item.title == 'Programs' %}
+                        <li>
+                        <h2><a role="button" href="#">{{ item.title }} <span class="caret"></span></a></h2>
+                        <div class="cols-1">
+                        <ol>
+                        <li class="accessible-megamenu-panel-group" style="margin-top: 3em;">
+                            <p class="sc-invisible-991 menu-blurb">Start or finish your degree or learn<br/> a marketable skill to launch
+                                a career.</p>
+                            <p class="sc-invisible-991"><a class="btn btn-primary" href="/programs" tabindex="0" tabindex="0">All Programs</a></p>
+                        </li>
+                        {{ menus.menu_links(item.below, menu_level+1) }}
+                    {% elseif item.title == 'Enrollment & Funding' %}
+                        <li>
+                        <h2><a role="button" href="#" tabindex="0">{{ item.title }} <span class="caret"></span></a></h2>
+                        <div class="cols-2">
+                        <ol>
+                        <li class="accessible-megamenu-panel-group" style="margin-top: 3em;">
+                            <p class="sc-invisible-991 menu-blurb">Learn how to apply and begin<br/> your Seattle Central journey.</p>
+                            <p class="sc-invisible-991"><a class="btn btn-primary" tabindex="0" href="/get-started" role="button">Get Started</a></p>
+                        </li>
+                        {{ menus.menu_links(item.below, menu_level+1) }}
+                    {% elseif item.title == 'About Us' %}
+                        <li>
+                        <h2><a tabindex="0" role="button" href="#">{{ item.title }} <span class="caret"></span></a></h2>
+                        <div class="cols-3">
+                        <ol>
+                        <li class="accessible-megamenu-panel-group" style="margin-top: 3em;">
+                            <p class="sc-invisible-991 menu-blurb">Learn how to apply and begin<br/> your Seattle Central journey.</p>
+                            <p class="sc-invisible-991"><a tabindex="0" class="btn btn-primary" href="/get-started" role="button">Get Started</a></p>
+                        </li>
+                        {{ menus.menu_links(item.below, menu_level+1) }}
+                    {% elseif item.title == 'Campus Life' %}
+                        <li>
+                        <h2><a tabindex="0" role="button" href="#">{{ item.title }} <span class="caret"></span></a></h2>
+                        <div class="cols-4">
+                        <ol>
+                        <li class="accessible-megamenu-panel-group" style="margin-top: 3em;">
+                            <p class="sc-invisible-991 menu-blurb">Explore what makes our location<br/> a great place to learn.</p>
+                            <p class="sc-invisible-991"><a tabindex="0" class="btn btn-primary" href="/get-started/visit-campus" role="button">Take a Tour</a></p>
+                        </li>
+                        {{ menus.menu_links(item.below, menu_level+1) }}
+                    {% endif %}
+                {% endif %}
+            {% elseif menu_level == 1 %}
+                {% if running_count == 0 or (running_count) is divisible by(4) %}
+                    <li class="accessible-megamenu-panel-group" style="margin-top: 3em;">
+                    <ol>
+                {% endif %}
+                <li><a tabindex="0" href="{{ item.url }}">{{ item.title }}</a></li>
+                {% set running_count = running_count + 1 %}
+            {% if running_count > 0 and (running_count) is divisible by(4) %}
+            </ol>
+            </li>
+            {% set running_count = 0 %}
+            {% endif %}
+            {% if loop.last and div_close == 0 %}
+                </div>
+                </li>
+                {% set div_close = 1 %}
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endmacro %}

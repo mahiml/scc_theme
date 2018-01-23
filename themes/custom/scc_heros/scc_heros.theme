@@ -1,0 +1,159 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+function scc_heros_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+{
+    if (isset($variables['view']->element['#view_id'])) {
+        $suggestions[] = 'views_view__' . $variables['view']->element['#view_id'];
+    }
+}
+
+function scc_heros_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables)
+{
+    if (isset($variables['view']->element['#view_id'])) {
+        $suggestions[] = 'views_view_unformatted__' . $variables['view']->element['#view_id'];
+    }
+}
+
+function scc_heros_preprocess_breadcrumb(&$variables)
+{
+    $request = \Drupal::request();
+    $route_match = \Drupal::routeMatch();
+    $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+    //this variable will avaliable in twig file.
+    $variables['current_page_title'] = $page_title;
+}
+
+function scc_heros_theme_suggestions_container_alter(array &$suggestions, array $variables)
+{
+    if (isset($variables['element']['#name'])) {
+        $suggestions[] = 'container__' . $variables['element']['#name'];
+    }
+}
+
+
+function scc_heros_theme_suggestions_form_alter(array &$suggestions, array $variables)
+{
+    if ($variables['element']['#form_id']) {
+        $suggestions[] = 'form__' . $variables['element']['#form_id'];
+    }
+}
+
+function scc_heros_theme_suggestions_block_alter(array &$suggestions, array $variables)
+{
+    $content = $variables['elements']['content'];
+    if (!empty($variables['elements']['#id']) && !empty($content['#menu_name'])) {
+        $block = \Drupal\block\Entity\Block::load($variables['elements']['#id']);
+        if ($block->getRegion() == 'sidebar_first') {
+            $suggestions[] = 'block__' . $block->getRegion();
+        }
+    }
+    if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+        $suggestions[] = 'block__' . $content['#block_content']->bundle();
+    }
+
+}
+
+function scc_heros_preprocess_block(&$variables)
+{
+    try {
+        $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+        $variables['base_path'] = base_path();
+        $variables['active_theme_name'] = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+    } catch (Exception $e) {
+        $variables['is_front'] = FALSE;
+    }
+    if (isset($variables["elements"]["#id"])) {
+        $block_id = $variables["elements"]["#id"];
+        $block = \Drupal\block\Entity\Block::load($block_id);
+
+        if ($block) {
+            $region = $block->getRegion();
+            if ($region == "navigation" || $region == "navigation_collapsible" || $region == "sidebar_first") {
+                $variables["content"]["#attributes"]["region"] = $block->getRegion();
+            }
+        }
+    }
+}
+
+
+function scc_heros_theme_suggestions_page_title_alter(array &$suggestions, array $variables)
+{
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $content_type = $node->bundle();
+        if (!empty($content_type)) {
+            $tokens = explode('-', trim($content_type));
+            array_push($tokens, 'title');
+            $twigName = implode('__', $tokens);
+            $suggestions[] = 'page__' . $twigName;
+        }
+    }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function scc_heros_theme_suggestions_menu_alter(array &$suggestions, array $variables)
+{
+    // Remove the block and replace dashes with underscores in the block ID to
+    // use for the hook name.
+    if (isset($variables['attributes']['block'])) {
+        $hook = str_replace(array('block-', '-'), array('', '_'), $variables['attributes']['block']);
+        $suggestions[] = $variables['theme_hook_original'] . '__' . $hook;
+    }
+
+    if (isset($variables["attributes"]["region"])) {
+        if ($variables["attributes"]["region"] == 'sidebar_first') {
+            $suggestions[] = 'menu' . '__' . $variables["attributes"]["region"];
+        }
+        $suggestions[] = $variables["theme_hook_original"] . "__" . $variables["attributes"]["region"];
+    }
+}
+
+
+/**
+ * @param array $suggestions
+ * @param array $variables
+ */
+function scc_heros_theme_suggestions_page_alter(array &$suggestions, array $variables)
+{
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $content_type = $node->bundle();
+        if (!empty($content_type)) {
+            $tokens = explode('-', trim($content_type));
+            $twigName = implode('__', $tokens);
+            $suggestions[] = 'page__' . $twigName;
+        }
+        $node_name = $node->getTitle();
+        if (isset($node_name)) {
+            $tokens = explode('-', trim($node_name));
+            $twigName = implode('__', $tokens);
+            $suggestions[] = 'page__' . $twigName;
+
+        }
+    }
+}
+function scc_heros_preprocess_menu__front_megamenu(&$variables)
+{
+    try {
+        $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+    } catch (Exception $e) {
+        $variables['is_front'] = false;
+    }
+}
+
+function scc_heros_preprocess_page_title(&$variables)
+{
+    $request = \Drupal::request();
+    if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+        $title = \Drupal::service('title_resolver')->getTitle($request, $route);
+        if (!is_array($title) && strcmp($title, 'Search') == 0) {
+            $variables['title'] = 'Search Seattle Central College';
+        }
+    }
+}

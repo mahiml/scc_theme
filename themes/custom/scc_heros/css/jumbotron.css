@@ -1,0 +1,1583 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  color: #111;
+}
+
+/*.navbar {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 45px;
+}
+
+.sc-header-global-menu {
+  background-color: #ffc628;
+  border-radius: 50%;
+  color: #002c46;
+  cursor: pointer;
+  float: left;
+  height: 40px;
+  margin-top: 17px;
+  padding: 0;
+  text-align: center;
+  width: 40px;
+}
+
+.sc-header-brand {
+    float: left;
+}
+
+.sc-header-global-menu .icon {
+  font-size: 32px;
+  line-height: 1.3;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-family: "futura-pt",Futura,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+
+.sc-brand img {
+  float: left;
+  margin-left: 16px;
+  padding: 15px 0 16px 0;
+  width: 333px;
+}
+*/
+
+::selection {
+  background: #ffc628;
+  color: #111;
+  text-shadow: none;
+}
+
+.content {
+  padding: 0;
+}
+
+.sc-single-column {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.about-seattlecentral h2 {
+  color: #111;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 36px;
+  margin-bottom: 32px;
+} 
+
+.about-seattlecentral {
+  font-size: 24px;
+  line-height: 1.5;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+  text-align: left !important;
+}  
+
+.about-seattlecentral p {
+  margin-bottom: 25px;
+  text-align: justify;
+} 
+
+.program-choices-intro {
+  display: block;
+}
+
+.programblurb-seattlecentral h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 36px;
+  margin-bottom: 32px;
+  text-align: center;
+} 
+
+.programblurb-seattlecentral {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: left !important;
+}  
+
+.programblurb-seattlecentral p {
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+} 
+
+.sc-getstarted-getinfo {
+  margin-top: 1em; 
+  text-align: center;
+}
+
+.sc-getstarted-getinfo .btn {
+  font-size: 20px;
+}  
+
+.jumbotron-top-story {
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 0;
+  min-height: 200px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbotron-top-story .container,
+.jumbotron-third-story .container {
+  padding-top: 10px; 
+  padding-bottom: 55px;
+}  
+
+.jumbotron-stats-story {
+  background-color: #ffc628 !important;
+  position: relative;
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 0;
+  min-height: 200px;
+  overflow: hidden;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbotron-stats-story .container-fluid {
+  max-width: 1200px;
+}
+
+.jumbotron-stats-story .container {
+  margin-top: 9em; 
+  margin-bottom: 3em; 
+  max-width: 750px;
+}
+
+span.sc-stats-number {
+  color: #003d61;
+  font-family: "futura-pt",Futura,Helvetica,Arial,sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p.sc-stats-text {
+  color: #003d61;
+  font-size: 2em;
+}
+
+.stats-space {
+  margin-bottom: 4%;
+}
+
+.stats-space img {
+  margin: auto;
+}
+
+.stats-space .col-sm-6,
+.stats-space .col-xs-12 {
+  padding: 30px;
+}
+
+.jumbotron-stats-story hr {
+  border-top: 1px solid #004a75 !important;
+  max-width: 300px;
+  margin: 4em auto;
+}
+
+.jumbotron-second-story .container {
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
+.jumbotron-second-story {
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 0;
+  min-height: 200px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbotron-third-story {
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 0;
+  min-height: 200px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-top {
+  /*background-image: url("images/aerial.jpg");*/
+  background-image: url("images/seattle-central-in-the-city.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1100px;
+}
+
+.parallax-get-started {
+  /*background-image: url("images/aerial.jpg");*/
+  background-image: url("images/seattle-central-campus-locations.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1100px;
+}
+
+.parallax-get-started-content {
+  max-width: 666px;
+  padding: 160px 20px 0 60px;
+}
+
+.bg-opacity {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-inverse {
+  background-color: #0066a1;
+  border-color: #0066a1;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.btn-success {
+  background-color: #0066a1;
+  border-color: #0066a1;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.btn-success:hover {
+  background-color: #ffc628;
+  border-color: #ffc628;
+  color: #111;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: #111;
+  background-color: #ffc628;
+  border: 1px solid #ffc628;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #0066a1;
+  border-color: #0066a1;
+  color: #fff;
+}
+
+.btn-default {
+  background-color: #eee;
+  border: 1px solid #fff;
+}
+
+.btn-default:hover {
+  background-color: #ffc628;
+  border: 1px solid #fff;
+}
+
+.btn-info {
+  color: #111;
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+
+.btn-info:hover {
+  background-color: #ffc628;
+  border-color: #ffc628;
+  color: #111;
+}
+
+.bg-charcoal,
+.bg-black {
+  background-color: #111;
+  color: #fff;
+}
+
+.sc-testimonial {
+  padding-top: 50px; 
+  padding-bottom: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sc-testimonial .col-md-4 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.sc-testimonial h2,
+.jumbotron-stats-story h2 {
+  letter-spacing: 2px;
+  margin: 0 auto 20px auto;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.jumbotron-stats-story h2 {
+  color: #003d61;  
+}
+
+.photo-section {
+  margin: 0 auto;
+  width: 200px;
+}
+
+span.person-section {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p.quote-section {
+  color: #fff;
+  font-size: 1.75em;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: .75em;
+}
+
+.jumbotron-top-story h1 {
+  color: #fff;
+  font-size: 6.1em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 71%;
+  text-shadow: 2px 2px #333;
+}
+
+.jumbotron-second-story h2 {
+  color: #fff;
+  font-size: 7.6em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 32%;
+  text-shadow: 2px 2px #333;
+}
+
+.jumbotron-third-story h2 {
+  color: #fff;
+  font-size: 7.6em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 60%;
+  text-shadow: 2px 2px #333;
+}
+
+.parallax-top h2 {
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+  border-radius: 2px;
+  color: #fff;
+  font-size: 7.6em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0 auto;
+  padding: 60px 20px 108px 20px;
+  text-align: center;
+  text-shadow: 2px 2px #333;
+  margin-top: -20px !important;
+}
+
+.jumbotron-top-story p,
+.jumbotron-second-story p,
+.jumbotron-third-story p {
+  color: #fff;
+  font-size: 2.15em;
+  font-weight: 400;
+  line-height: 1.2;
+  text-shadow: 2px 2px #333;
+}
+
+.program-choices-large-screens {
+  display: block;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.program-choices-large-screens .row {
+  max-width: 1400px;
+  margin: 0 auto 30px auto;
+}
+
+/*The CSS for the image and the container element.*/
+.box {
+  border-radius: 2px;  
+  cursor: pointer;
+  min-height: 316px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.box img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.titlebefore {
+  /*background-image: url("images/opacity.png");*/
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 16px;
+  padding: 5px;
+  position: absolute;
+  text-shadow: #111 2px 2px;
+  top: 4px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.box:hover .titlebefore,
+.box:focus .titlebefore {
+  display: none;
+}
+
+/*The CSS to style and animate the overlay.*/
+.box .overbox {
+  background-color: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+/*The CSS to style and animate text captions.*/
+.box .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.box .title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.box .description {
+  font-size: 20px;
+  line-height: 1.5;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.box:hover .title,
+.box:focus .title,
+.box:hover .description,
+.box:focus .description {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.box .learnmore {
+  margin-top: 20px;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.box:hover .learnmore,
+.box:focus .learnmore {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+
+.program-choices-large-screens .col-lg-6 {
+  margin-bottom: 30px;
+}
+
+.program-choices-small-screens {
+  display: none;
+}
+
+.cardblack {
+  background: #333;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #fff;
+  margin-bottom: 26px;
+  padding-bottom: 12px;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.cardblack h2 {
+  font-size: 21px;
+  letter-spacing: 1px;
+  margin-bottom: 12px
+}
+
+.cardblack:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardblack img {
+  border-radius: 2px 2px 0 0;
+}
+
+.cardblack-container {
+  padding: 6px 16px;
+}
+
+.jumbotron-type-of-student {
+  background-position: center;
+  color: inherit;
+  min-height: 200px;
+  padding: 0;
+}
+
+.type-of-student-large-screen {
+  display: block;
+  padding-bottom: 60px;
+  margin-bottom: -31px;
+}
+
+.type-of-student-large-screen .col-sm-3 {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.type-of-student-small-screen {
+  display: none;
+}
+
+.type-of-student-large-screen h2 {
+  color: #fff;
+  font-size: 3em !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  margin-bottom: 4px !important;
+  margin-top: 24% !important;
+  text-shadow: 2px 2px #000;
+}
+
+.type-of-student-large-screen p {
+  color: #fff;
+  font-size: 1.75em !important;
+  line-height: 1.4 !important;
+  margin-bottom: 20px !important;
+  margin-top: 10px !important;
+  text-shadow: 1px 1px #000;
+}
+
+.type-of-student-small-screen h2 {
+  color: #fff;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  margin-top: 15% !important;
+  text-shadow: 2px 2px #000;
+}
+
+.type-of-student-small-screen p {
+  color: #fff;
+  font-size: 21px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 20px !important;
+  margin-top: 10px !important;
+  text-shadow: 1px 1px #000;
+}
+
+.type-of-student-small-screen .btn-group {
+  margin-bottom: 3px;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  width: 20%;
+  float: left;
+}
+
+@media only screen and (max-width: 2400px) {
+  .jumbotron-top-story h1 {
+    margin-top: 66%;
+  }
+}  
+
+/* iMac sizing */
+@media only screen and (max-width: 2140px) {
+  .jumbotron-top-story h1 {
+    margin-top: 57%;
+  }
+
+  .jumbotron-second-story h2 {
+    font-size: 6.6em;
+    margin-top: 22%;
+  }
+  
+  .jumbotron-third-story h2 {
+    font-size: 6.6em;
+  }
+
+  .parallax-top h2 {
+    font-size: 6.6em;
+  }
+
+  .student-type {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  .parallax-top,
+  .parallax-get-started {
+    height: 800px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 200px;
+    margin: 1.5em auto;
+  }
+}  
+
+/* MacBook Pro 15 inch */
+@media only screen and (max-width: 1920px) {
+  .jumbotron-second-story h2 {
+    font-size: 6.3em;
+    margin-top: 20%;
+  }
+  
+  .jumbotron-third-story h2 {
+    font-size: 6.3em;
+  }
+
+  .parallax-top h2 {
+    font-size: 6.3em;
+  }
+
+  .program-choices {
+    max-width: 800px;
+    padding-bottom: 1.5em;
+    padding-top: 3em;
+  }
+
+  .student-type {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  .parallax-top,
+  .parallax-get-started {
+    height: 800px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 200px;
+    margin: 1.5em auto;
+  }
+}  
+
+/* MacBook Pro 13 inch */
+@media only screen and (max-width: 1680px) {
+  .jumbotron-top-story h1 {
+    margin-top: 44%;
+  }
+
+  .jumbotron-second-story h2 {
+    font-size: 6em;
+    margin-top: 17%;
+  }
+  
+  .jumbotron-third-story h2 {
+    font-size: 6em;
+    margin-top: 40%;
+  }
+
+  .parallax-top h2 {
+    font-size: 6em;
+  }
+
+  .student-type {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  .parallax-top,
+  .parallax-get-started {
+    height: 700px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 200px;
+    margin: 1.5em auto;
+  }
+
+  .sc-testimonial .col-md-4 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .sc-testimonial h2 {
+    letter-spacing: 1px;
+    font-size: 36px;
+  }
+
+  .photo-section {
+    width: 150px;
+  }
+
+  span.person-section {
+    font-size: 1.15em;
+  }
+
+  p.quote-section {
+    font-size: 1.5em;
+  }
+}  
+
+/* MacBook Air */
+@media only screen and (max-width: 1440px) {
+  .jumbotron-top-story h1 {
+    font-size: 5.5em;
+    margin-top: 40%;
+  }
+
+  .jumbotron-second-story h2 {
+    font-size: 5.6em;
+    margin-top: 14%;
+  }
+  
+  .jumbotron-third-story h2 {
+    font-size: 5.6em;
+    margin-top: 33%;
+  }
+
+  .parallax-top h2 {
+    font-size: 5.6em;
+  }
+
+  .student-type {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  .parallax-top,
+  .parallax-get-started {
+    height: 600px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 190px;
+    margin: 1.5em auto;
+  }
+}  
+
+/* huge iPad */
+@media only screen and (max-width: 1366px) {
+  .parallax-top,
+  .parallax-get-started {
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .jumbotron-top-story h1 {
+    font-size: 4.25em;
+    margin-top: 34%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 4.5em;
+    margin-top: 19%;
+  }
+
+  .jumbotron-third-story h2 {
+    font-size: 4.5em;
+  }
+
+  .parallax-top h2 {
+    font-size: 4.5em;
+  }
+
+  .sc-getstarted-getinfo {
+    margin-top: 1em;
+  }
+
+  .student-type {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 200px;
+    margin: 2em auto;
+  }
+
+  .btn-primary {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 1324px) {
+ .parallax-top,
+ .parallax-get-started {
+    height: 700px;
+    background-attachment: inherit;
+  }
+
+  .jumbotron-top-story .container,
+  .jumbotron-third-story .container {
+    padding-top: 8px; 
+    padding-bottom: 35px;
+  }  
+}
+
+@media only screen and (max-width: 1280px) {
+  .parallax-get-started-content {
+    max-width: 444px;
+  }
+}   
+
+@media (max-width: 1200px) {
+  .program-choices-large-screens {
+    display: none;
+  }
+
+  .program-choices-small-screens {
+    display: block;
+    margin-bottom: 0;
+    margin-top: -12px;
+    padding-top: 20px;
+  }
+
+  .type-of-student-large-screen h2 {
+    font-size: 2.5em !important;
+    margin-top: 20% !important;
+  }
+
+  .type-of-student-large-screen p {
+    font-size: 1.25em !important;
+    margin-bottom: 16px !important;
+    margin-top: 8px !important;
+  }
+
+  span.sc-stats-number {
+    font-size: 1.5em;
+  }
+
+  p.sc-stats-text {
+    font-size: 1em;
+  }
+}
+
+/* iPad landscape */
+@media only screen and (max-width: 1024px) {
+  .sc-brand img {
+    float: left;
+    margin-left: 12px;
+    padding: 12px 0 14px 0px;
+    width: 240px;
+  }
+
+  .parallax-top,
+  .parallax-get-started {
+    height: 500px;
+    background-attachment: inherit;
+  }
+
+  .jumbotron-top-story h1 {
+    font-size: 3.6em;
+    margin-top: 33%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 3.6em;
+    margin-top: 15%;
+  }
+
+  .jumbotron-third-story h2 {
+    font-size: 3.6em;
+  }
+
+  .parallax-top h2 {
+    font-size: 3.6em;
+  }
+
+  .jumbotron-third-story p {
+    font-size: 1.75em;
+  }
+
+  .sc-getstarted-getinfo {
+    margin-top: .75em;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary,
+  .type-of-student-large-screen .btn-primary {
+    padding: 8px 14px;
+    font-size: 16px;
+    line-height: 1.3333333;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 175px;
+    margin: 1.5em auto;
+  }
+
+  .btn-primary {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .btn-default {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .breadcrumb-container {
+    padding: 24px 24px 0 24px;
+  }
+
+  .photo-section {
+    margin-top: 3em;
+  }
+
+  span.person-section {
+    font-size: 1.15em;
+    margin-bottom: 1.5em;
+  }
+
+  p.quote-section {
+    font-size: 1.5em;
+  }
+
+  .sc-single-column {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .jumbotron-top-story h1 {
+    margin-top: 42%;
+  }
+
+  .about-seattlecentral h2,
+  .programblurb-seattlecentral h2 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  } 
+
+  .about-seattlecentral {
+    font-size: 21px;
+    line-height: 1.5;
+    padding-bottom: 1.25em;
+    padding-top: 1.15em;
+    text-align: left;
+  }  
+
+  .about-seattlecentral p {
+    margin-bottom: 20px;
+  } 
+
+  .type-of-student-large-screen h2 {
+    font-size: 2.5em !important;
+    margin-top: 20% !important;
+  }
+
+  .type-of-student-large-screen p {
+    font-size: 1.15em !important;
+    margin-bottom: 12px !important;
+    margin-top: 6px !important;
+  }
+
+  p.sc-stats-text {
+    font-size: 1.25em;
+  }
+
+  .parallax-get-started-content {
+    max-width: 444px;
+    padding: 100px 10px 0 40px;
+  }
+} 
+
+@media only screen and (max-width: 800px) {
+  .programs-small-screens {
+    display: block;
+    margin: -30px auto 10px auto;
+    text-align: center;
+  }
+
+  .jumbotron-type-of-student {
+    padding: 0 14px 30px 14px;
+  }
+
+  .type-of-student-large-screen {
+    display: none;
+  }
+
+  .type-of-student-small-screen {
+    display: block;
+  }
+
+  .type-of-student-small-screen .btn-primary {
+    display: block;
+    margin-bottom: 6px;
+    margin-left: 2px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.3333333;
+  }
+
+  .type-of-student-small-screen h2 {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    margin-top: 35px !important;
+    text-shadow: 1px 1px #000 !important;
+  }
+
+  .type-of-student-small-screen p {
+    font-size: 15px !important;
+    line-height: 1 !important;
+    margin-bottom: 10px !important;
+    margin-top: 8px !important;
+  }
+
+  .about-seattlecentral h2,
+  .programblurb-seattlecentral h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 14px;
+  } 
+
+  .about-seattlecentral p {
+    text-align: left;
+  } 
+
+  .parallax-get-started-content {
+    max-width: 400px;
+    padding: 50px 10px 0 20px;
+  }
+}     
+
+/* iPad portrait */
+@media only screen and (max-width: 768px) {
+  .jumbotron-top-story h1 {
+    font-size: 2.5em;
+    margin-top: 33%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 2.5em;
+    margin-top: 13%;
+  }
+
+  .jumbotron-third-story h2 {
+    font-size: 2.5em;
+  }
+
+  .parallax-top h2 {
+    font-size: 2.5em;
+  }
+
+  .jumbotron-third-story p {
+    font-size: 1.5em;
+    margin-bottom: 18px;
+    text-shadow: 1px 1px #333;
+  }
+
+  .sc-getstarted-getinfo {
+    margin-top: 10px;
+    margin-bottom: 33px;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary
+  .type-of-student-small-screen .btn-primary {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.3333333;
+  }
+
+  .jumbotron-top-story .container,
+  .jumbotron-third-story .container {
+    padding-top: 8px; 
+    padding-bottom: 14px;
+  } 
+
+  .stats-space .col-xs-12 {
+    padding: 40px;
+    text-align: center !important;
+  } 
+
+  .jumbotron-stats-story hr {
+    max-width: 160px;
+    margin: 1em auto;
+    margin-top: 20px !important;
+  }
+
+  .btn-primary {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+/* iPhone 6 Plus landscape */
+@media only screen and (max-width: 736px) {
+  .parallax-top,
+  .parallax-get-started {
+    height: 350px;
+    background-attachment: inherit;
+  }
+
+  .jumbotron-top-story h1 {
+    font-size: 2.12em;
+    margin-top: 30%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 2.2em;
+    margin-top: 13%;
+  }
+
+  .jumbotron-third-story h2 {
+    font-size: 2.2em;
+  }
+
+  .parallax-top h2 {
+    font-size: 2.2em;
+  }  
+
+  .jumbotron-third-story p {
+    font-size: 1.25em;
+  }
+
+  .sc-getstarted-getinfo {
+    margin-top: 9px;
+    margin-bottom: 22px;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary,
+  .type-of-student-small-screen .btn-primary {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.3333333;
+  }
+
+  .jumbotron-stats-story {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 160px;
+    margin: 1em auto;
+  }
+
+  .sc-testimonial h2,
+  .jumbotron-stats-story h2 {
+    font-size: 24px;
+  }
+
+  .photo-section {
+    width: 100px;
+  }
+
+  p.quote-section {
+    font-size: 1em;
+  }
+
+  span.person-section {
+    font-size: 14px;
+  }  
+
+  .btn-primary {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .about-seattlecentral,
+  .programblurb-seattlecentral {
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }  
+
+  .about-seattlecentral p,
+  .programblurb-seattlecentral p {
+    margin-bottom: 18px;
+  } 
+}
+
+/* iPhone 6 landscape */
+@media only screen and (max-width: 667px) {
+  .parallax-top,
+  .parallax-get-started {
+    height: 310px;
+    background-attachment: inherit;
+  }
+
+  .jumbotron-top-story h1 {
+    font-size: 2em;
+    margin-top: 31%;
+    text-shadow: 1px 1px #333;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 2em;
+    margin-top: 16%;
+    text-shadow: 1px 1px #333;
+  }
+
+  .jumbotron-third-story h2 {
+    font-size: 2em;
+    text-shadow: 1px 1px #333;
+  }
+
+  .parallax-top h2 {
+    font-size: 2em;
+    text-shadow: 1px 1px #333;
+  }  
+
+  .sc-getstarted-getinfo {
+    margin-top: 12px;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary,
+  .type-of-student-small-screen .btn-primary {
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 1.3333333;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 160px;
+    margin: 1em auto;
+  }
+
+  .btn-primary {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .jumbotron-type-of-student {
+    background-position: left;
+  }
+
+  .type-of-student-small-screen h2 {
+    margin-top: 16px;
+  }
+
+  .type-of-student-small-screen p {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    margin-top: 4px;
+  }
+
+  .stats-space .col-sm-6,
+  .stats-space .col-xs-12 {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.parallax-get-started-content {
+    max-width: 333px;
+    padding: 10px 6px 0 16px;
+  }
+}  
+
+/* iPhone 5 landscape */
+@media only screen and (max-width: 568px) {
+  .jumbotron-top-story h1 {
+    font-size: 1.8em;
+    margin-top: 32%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    margin-top: 15%;
+  }
+
+  .parallax-top h2 {
+    font-size: 1.8em;
+  }  
+
+  .sc-getstarted-getinfo {
+    margin-top: 0;
+  }
+
+  .jumbotron-third-story p {
+    margin-bottom: 8px;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary,
+  .type-of-student-small-screen .btn-primary {
+    padding: 4px 10px;
+    font-size: 14px !important;
+    line-height: 1.3333333;
+  }
+
+  span.sc-stats-number {
+    font-size: 2.75em;
+    margin-bottom: 0;
+  }
+
+  p.sc-stats-text {
+    font-size: 16px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 100px;
+    margin: 12px auto;
+    margin-top: 10px !important;
+  }
+
+  .btn-primary {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .btn-default {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .parallax-get-started-content {
+      max-width: 300px;
+      padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .parallax-get-started-content {
+      max-width: 266px;
+      padding: 6px 16px;
+  }
+}
+
+/* iPhone 6 Plus portrait */
+@media only screen and (max-width: 414px) {
+  .parallax-top,
+  .parallax-get-started {
+    height: 300px;
+  }
+
+  .program-page-main-content-getstarted h2 {
+    margin-top: 44px;
+  }
+
+  .jumbotron-top-story h1 {
+    font-size: 1.8em;
+    margin-top: 33%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 1.8em;
+    margin-top: 17%;
+  }
+
+  .jumbotron-third-story h2 {
+    font-size: 1.8em;
+  }
+
+  .parallax-top h2 {
+    font-size: 1.8em;
+  }  
+
+  .jumbotron-third-story p {
+    font-size: 1.15em;
+  }
+
+  .sc-getstarted-getinfo {
+    margin-top: 10px;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary,
+  .type-of-student-small-screen .btn-primary {
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 1.3333333;
+  }
+
+  .student-type-small-screens h2 {
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  span.sc-stats-number {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 100px;
+    margin: 5px auto;
+    margin-top: 6px !important;
+  }
+
+  .btn-primary {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .parallax-get-started-content {
+      padding: 4px 8px;
+  }
+}
+
+/* iPhone 5 portrait */
+@media only screen and (max-width: 320px) {
+  .parallax-top,
+  .parallax-get-started {
+    height: 175px;
+    background-attachment: inherit;
+  }
+
+  .parallax-get-started {
+    height: 210px;
+  }
+
+  .jumbotron-top-story h1 {
+    font-size: 1.5em;
+    margin-top: 33%;
+  }
+ 
+  .jumbotron-second-story h2 {
+    font-size: 1.5em;
+    margin-top: 21%;
+  }
+
+  .jumbotron-third-story h2{
+    font-size: 1.5em;
+  }
+
+  .parallax-top h2 {
+    font-size: 1.5em;
+  }
+
+  .sc-getstarted-getinfo {
+    margin-top: 9px;
+  }
+
+  .sc-getstarted-getinfo .btn-lg,
+  .program-choices-small-screens .btn-primary,
+  .type-of-student-small-screen .btn-primary {
+    padding: 4px 10px;
+    font-size: 10px;
+    line-height: 1.3333333;
+  }
+
+  .student-type-small-screens-heading h2 {
+    font-size: 13px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+  }
+
+  .choice-bachelors,
+  .choice-transfer,
+  .choice-career,
+  .choice-basic,
+  .choice-highschool {
+    min-height: 77px;
+  }
+
+  span.sc-stats-number {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  p.sc-stats-text {
+    font-size: 16px;
+  }
+
+  .jumbotron-stats-story hr {
+    max-width: 80px;
+    margin: 9px auto;
+  }
+}

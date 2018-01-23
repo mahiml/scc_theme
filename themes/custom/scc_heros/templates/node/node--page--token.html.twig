@@ -1,0 +1,28 @@
+{% set truncated_title =  node.title.0.value|striptags|length > 100 ? node.title.0.value|striptags|slice(0,100) ~ '...' : node.title.0.value|striptags %}
+{% set link_url = node.field_external_url.0.url|length > 0 ? node.field_external_url.0.url :  path('entity.node.canonical', {'node': node.nid.0.value }) %}
+   {% if node.field_img.entity.uri.value and node.field_img.entity.uri.value is not empty %}
+       {% set img_url = node.field_img.entity.fileuri %}
+   {% else %}
+       {% set img_url = get_image_uri(node,'field_img') %}
+   {% endif %}
+    {% if node.field_img.entity.uri.value and node.field_img.entity.uri.value is not empty %}
+        {% set img_alt = node.field_img.0.alt %}
+    {% else %}
+        {% set img_alt = 'Seattle Central College' %}
+    {% endif %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <p><img alt="{{ img_alt }}" class="img-responsive"
+                    src="{{ file_url(img_url) }}"/></p>
+
+            <h3 class="text-center">{{ truncated_title }}</h3>
+
+            <p class="text-center">{{ content['body'] }}</p>
+
+            <p class="text-center">
+                <a href="{{ link_url }}" target="_blank" class="btn btn-primary btn-lg">Learn More</a>
+            </p>
+        </div>
+    </div>
+</div>

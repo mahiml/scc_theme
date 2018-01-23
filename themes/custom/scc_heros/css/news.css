@@ -1,0 +1,1199 @@
+.bg-grey-flat {
+  background-color: #eee !important;
+  color: #111 !important;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+h1.landing-page-title {
+  border-bottom: 5px solid #ffc628;
+  color: #0066a1;
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 0 0 7px 0;
+  margin-bottom: 30px;
+}
+
+.well.sc-link-blue {
+  background: #005180;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  height: 288px;
+  padding: 16px 11px 16px 11px;
+}
+
+.well.sc-link-blue h2 { 
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 12px; 
+  padding-bottom: 2px;
+}
+
+h3.in-the-news-events { 
+  color: #555;
+  border-bottom: 4px solid #ccc;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 12px; 
+  padding-bottom: 2px;
+}
+
+.well.sc-link-blue a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+ 
+.well.sc-link-blue a:focus, 
+.well.sc-link-blue a:hover {
+  background: #013350;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.link-mycentral,
+.link-canvas,
+.link-library,
+.link-calendar,
+.link-ead,
+.link-office365,
+.link-email,
+.link-facultysites,
+.link-maps,
+.link-blog,
+.link-briefcase,
+.link-parking,
+.link-dining,
+.link-events,
+.link-activity {
+  height: 112px !important;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 133px !important;
+}
+
+.sc-landing-news h3 {
+  font-size: 17px;
+  margin-bottom: 22px;
+}
+
+.sc-landing-news h3 a {
+  color: #0000ff;
+}
+
+.sc-landing-news h3 a:focus,
+.sc-landing-news h3 a:hover, {
+  background: #ffc628 !important;
+  color: #0000ad;
+  text-decoration: underline;
+}
+
+.well.sc-landing-link-boxes {
+  border: 2px solid #ccc !important;
+}
+
+.sc-landing-link-boxes {
+  height: 333px;
+}
+
+.sc-landing-link-boxes h3 {
+  color: #111;
+  font-size: 21px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-bottom: 3px solid #ffc628;
+}
+
+.sc-landing-link-boxes ul {
+  padding-left: 1.15em;
+}
+
+.sc-landing-link-boxes li {
+  color: #111;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.sc-landing-util {
+  margin-top: -30px;
+}
+
+.alert-success {
+  margin-top: 40px;
+  font-size: 21px;
+  color: #111;
+  background-color: #eee;
+  border: none;
+}
+
+.alert-success a, 
+.alert-success a:focus, 
+.alert-success a:hover {
+    color: #0000ff;
+}
+
+.list-inline li a {
+  color: #0000ff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.list-inline li a:hover,
+.list-inline li a:focus {
+  background: #ffc628;
+  color: #0000bd;
+  text-decoration: underline;
+}
+
+/* slides */
+.carousel-inner {
+  border-radius: 2px;
+  min-height: 200px;
+  max-height: 580px;
+}
+
+.carousel-caption h2 a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,.3);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+}
+
+.carousel-caption h2 a:hover {
+  text-decoration: underline;
+}
+
+.carousel-caption {
+  bottom: 25%;
+  right: 5%;
+  left: 0%;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-next, 
+.carousel-control .icon-prev {
+  width: 60px;
+  height: 60px;
+  margin-top: -10px;
+  font-size: 42px;
+}
+/* slides */
+
+.page-header {
+  margin-top: 25px;
+  border-bottom: none;
+  color: #222;
+  font-size: 21px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sc-single-column {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.top-pot-box {
+  margin: 40px auto 0 auto; 
+  max-width: 1140px;
+}
+
+.top-stories-slide {
+  padding: 0;
+} 
+
+.featured-stories {
+  margin: 40px auto;
+  max-width: 100%;
+}
+
+.blog-list-page-main-content a,
+.blog-list-page-sidebar a,
+.featured-stories h3 a, 
+.news-events-media a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.blog-list-page-main-content a:hover,
+.blog-list-page-sidebar a:hover,
+.featured-stories h3 a:hover,
+.news-events-media a:hover {
+  background-color: #ffce46 !important;
+  color: #0000c1;
+  text-decoration: underline;
+}
+
+.breadcrumb-container {
+  padding-top: 30px;
+}
+
+.breadcrumb {
+  background-color: #fff;
+  border-radius: 2px;
+  color: #555;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 0 4px;
+}
+
+.breadcrumb a {
+  color: #555;
+}
+
+.breadcrumb>.active {
+  color: #555;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.media {
+  border-bottom: 2px solid #eee;
+}
+
+.media:last-child {
+  border-bottom: none;
+}
+
+.well .btn-primary {
+  color: #002c46;
+  background-color: #ffc628;
+  border: 1px solid #ffc628;
+  text-decoration: none;
+}
+
+.well .btn-primary:focus,
+.well .btn-primary.focus {
+    color: #fff;
+    background-color: #0066a1;
+    border: 1px solid #0066a1;
+    text-decoration: none;
+}
+
+.well .btn-primary:hover {
+    color: #fff;
+    background-color: #0066a1;
+    border: 1px solid #0066a1;
+    text-decoration: none;
+}
+
+
+.bg-grey {
+  background: #eee;
+  background: -webkit-linear-gradient(#fff,#f0f0f0);
+  background: -o-linear-gradient(#fff,#f0f0f0);
+  background: -moz-linear-gradient(#fff,#f0f0f0);
+  background: linear-gradient(#fff,#f0f0f0);
+  color: #111 !important;
+}
+
+/* type */
+h1.blog-post-title {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  margin-left: 12px;
+  padding-right: 35px;
+  width: 66.66666667%;
+}
+
+.blog-list-page-main-content h1 {
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 16px;
+  margin-top: 18px;
+}
+
+h3,
+h4.article-headline {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.news-center-tagline {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.date-time,
+.blog-post-meta,
+.date-time a,
+.blog-post-meta a {
+  color: #555;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.date-time a:hover,
+.blog-post-meta a:hover,
+.date-time a:focus,
+.blog-post-meta a:focus  {
+  color: #555 !important;
+  text-decoration: underline;
+}
+
+.blog-list-page-main-content {
+  font-size: 21px;
+  line-height: 1.5;
+  padding-bottom: 3em;
+  padding-top: .75em;
+  padding-right: 40px;
+}
+
+.blog-list-page-sidebar {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 1.25em;
+}
+
+.blog-list-page-main-content p {
+  margin-bottom: 26px;
+}
+
+.blog-list-page-main-content ol,
+.blog-list-page-main-content ul {
+  margin: 0 0 1em -10px;
+}
+
+.blog-list-page-main-content li {
+  margin-bottom: 1em;
+}
+
+.blog-list-page-main-content h2 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.blog-list-page-sidebar h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+.blog-list-page-sidebar h2.media-heading {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 16px;
+  margin-top: 0;
+  text-transform: none;
+}
+
+.blog-list-page-sidebar h3 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.news-events-media {
+  margin-top: 40px auto 20px auto; 
+  width: 1170px;
+} 
+
+.container-news-1200 {
+  width: 1200px;
+}
+
+@media only screen and (max-width: 1250px) {
+  h1.blog-post-title {
+    font-size: 36px;
+  }
+
+  .blog-list-page-main-content h1 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    margin-top: 16px;
+  }
+
+  .date-time,
+  .blog-post-meta {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .blog-list-page-main-content {
+    font-size: 17px;
+    line-height: 1.5;
+    padding-bottom: 1.15em;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+  }
+
+  .breadcrumb>.active {
+    font-size: 13px;
+  }
+
+  .blog-list-page-main-content h2,
+  .blog-list-page-main-content h3 {
+    font-size: 16px;
+  }
+
+  .blog-list-page-main-content li {
+    margin-bottom: .6em;
+  }
+
+  .blog-list-page-sidebar {
+    font-size: 14px;
+  }  
+}
+
+@media only screen and (max-width: 1199px) {
+  .top-pot-box {
+    margin: 0 auto 0 auto; 
+    width: 970px;
+  } 
+
+  .carousel-inner {
+    max-height: 480px;
+  }
+
+  .carousel-caption {
+    bottom: 26%;
+  }
+  
+  .news-events-media {
+    margin-top: 30px auto 15px auto; 
+    width: 1000px;
+  } 
+
+  .container-news-1200 {
+    width: 1030px;
+  } 
+
+  h1.landing-page-title {
+    font-size: 48px;
+  }
+
+  .sc-landing-news h3 {
+    font-size: 15px;
+  }
+
+  .well.sc-link-blue {
+    height: 333px;
+  }
+
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    width: 111px !important;
+  }
+} 
+
+/* MacBook Air medium */
+@media only screen and (max-width: 1152px) {
+  .alert-success {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .carousel-caption {
+    bottom: 27%;
+  }  
+} 
+
+@media only screen and (max-width: 1080px) {
+  .sc-landing-link-boxes {
+    height: 399px;
+  }
+}
+
+/* iPad landscape */
+@media only screen and (max-width: 1024px) {
+  h1.landing-page-title {
+    font-size: 36px;
+  }
+
+  .alert-success {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .page-header {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+
+  .container-news-1200 {
+    max-width: 1000px; 
+  } 
+
+  .news-events-media {
+    margin-top: 30px auto 15px auto; 
+    max-width: 970px;
+  } 
+
+  .top-pot-box {
+    margin: 0 auto 0 auto;
+    width: 945px;
+  }
+} 
+
+/* weird middle */
+@media only screen and (max-width: 993px) {
+  .featured-stories {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 20px !important;
+  }
+
+  .container-news-1200 {
+    max-width: 990px; 
+  }  
+} 
+
+@media only screen and (max-width: 991px) {
+  h1.blog-post-title {
+    font-size: 42px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+  }
+
+  .blog-list-page-main-content h1 {
+    font-size: 21px;
+    margin-bottom: 16px;
+    margin-top: 18px;
+  }
+
+  .date-time,
+  .blog-post-meta {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .blog-list-page-main-content h2,
+  .blog-list-page-main-content h3 {
+    font-size: 24px;
+  }
+
+  .blog-list-page-main-content {
+    font-size: 21px;
+    line-height: 1.5;
+    padding: 0 1em 3em 1em;
+  }
+
+  .blog-list-page-main-content li {
+    margin-bottom: 1em;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+  }
+
+  .breadcrumb>.active {
+    font-size: 13px;
+  }
+
+  .container-news-1200 {
+    margin-top: 30px auto 15px auto; 
+    width: 100%;
+  } 
+
+  .news-events-media {
+    margin-top: 30px auto 15px auto; 
+    width: 98%;
+  }  
+
+  .sc-landing-link-boxes li {
+    color: #111;
+    line-height: 1.75;
+    font-size: 14px;
+  }
+
+  .sc-landing-link-boxes {
+    height: 344px;
+  } 
+
+  .sc-landing-link-boxes h3 {
+    font-size: 18px;
+  }
+
+  .well.sc-link-blue {
+    height: auto;
+  }
+
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    margin-left: 10px;
+    margin-right: 0;
+    width: 177px !important;
+  }
+} 
+
+@media only screen and (max-width: 976px) {
+  .carousel-caption {
+    bottom: 26%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .top-pot-box {
+    width: 720px;
+  } 
+
+  .carousel-inner {
+    max-height: 380px;
+  }
+} 
+
+@media only screen and (max-width: 900px) {
+  h1.blog-post-title {
+    font-size: 36px;
+  }
+
+  .date-time,
+  .blog-post-meta {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .blog-list-page-main-content h2,
+  .blog-list-page-main-content h3 {
+    font-size: 20px;
+  }
+
+  .blog-list-page-main-content {
+    font-size: 18px;
+    padding: 0 1em .5em 1em;
+  }
+} 
+
+@media only screen and (max-width: 875px) {
+  .carousel-caption {
+    bottom: 18%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  h1.landing-page-title {
+    font-size: 30px;
+  }
+
+  .carousel-caption {
+    bottom: 19%;
+  }
+}
+
+@media only screen and (max-width: 828px) {
+  .carousel-inner {
+    height: 420px;
+  }
+
+  .sc-landing-util {
+    margin-top: -25px;
+  }
+}
+
+/* MacBook Air small size */
+@media only screen and (max-width: 800px) {
+  .carousel-caption {
+    bottom: 18%;
+  }
+
+  .featured-stories .col-sm-3 {
+    padding-right: 10px;
+    padding-left: 10px;  
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .date-time,
+  .blog-post-meta,
+  .date-time a,
+  .blog-post-meta a {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .top-pot-box {
+    width: 100%;
+  } 
+}  
+
+/* iPad portrait */
+@media only screen and (max-width: 768px) {
+  .carousel-control .glyphicon-chevron-left, 
+  .carousel-control .glyphicon-chevron-right, 
+  .carousel-control .icon-next, 
+  .carousel-control .icon-prev {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+
+  .carousel-caption {
+    bottom: 17%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .news-events-media,
+  .container-news-1200 { 
+    max-width: 735px;
+  }
+
+  .blog-list-page-sidebar {
+    padding: 2em 1em 3em 1em;
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+  .sc-landing-news h3 {
+      font-size: 21px;
+  }
+}  
+
+@media only screen and (max-width: 747px) {
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 167px !important;
+  }
+}  
+
+/* iPhone 6 Plus Landscape */
+@media only screen and (max-width: 736px) {
+  .carousel-caption {
+    bottom: 18%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+
+  .carousel-caption h2 a {
+    font-size: 21px;
+  }
+
+  h1.blog-post-title {
+    font-size: 30px;
+  }
+
+  .blog-list-page-main-content h1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    margin-top: 14px;
+  }
+
+  .date-time,
+  .blog-post-meta {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .blog-list-page-main-content h2,
+  .blog-list-page-main-content h3 {
+    font-size: 19px;
+  }
+
+  .blog-list-page-main-content {
+    font-size: 17px;
+    padding: 0 2em 2em 1.5em;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .breadcrumb>.active {
+    font-size: 11px;
+  }
+
+  .blog-list-page-main-content li {
+    margin-bottom: .8em;
+  }
+} 
+
+/* iPhone 6 Plus Landscape */
+@media only screen and (max-width: 732px) {
+  .carousel-caption {
+    bottom: 21%;
+  }
+}
+
+@media only screen and (max-width: 714px) {
+  .carousel-caption {
+    bottom: 21%;
+  }
+}
+
+@media only screen and (max-width: 708px) {
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 157px !important;
+  }
+}  
+
+@media only screen and (max-width: 700px) {
+  .carousel-caption {
+    bottom: 20%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 147px !important;
+  }
+}  
+
+/* iPhone 6 Landscape */
+@media only screen and (max-width: 667px) {
+  h1.landing-page-title {
+    font-size: 24px;
+  }
+
+  .carousel-caption {
+    bottom: 18%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .featured-stories .col-xs-6 {
+    height: 272px;
+    padding-right: 6px;
+    padding-left: 6px;  
+  }
+
+  .blog-list-page-main-content .col-xs-6 {
+    height: 266px;
+  }
+
+  .sc-landing-util {
+    margin-top: -20px;
+  }
+} 
+
+@media only screen and (max-width: 632px) {
+  .carousel-caption {
+    bottom: 17%;
+  }
+
+  .sc-landing-util {
+    margin-top: 0;
+  }
+} 
+
+@media only screen and (max-width: 619px) {
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    margin-left: 0;
+    margin-right: 0;
+    width: 137px !important;
+  }
+}  
+
+@media only screen and (max-width: 608px) {
+  .carousel-inner {
+    height: 310px;
+  }
+
+  .carousel-caption {
+    bottom: 22%;
+  }
+
+  .sc-landing-news h3 {
+      font-size: 18px;
+  }
+}
+
+/* iPhone 5 Landscape */
+@media only screen and (max-width: 568px) {
+  .page-header {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+
+  .carousel-caption {
+    bottom: 23%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .carousel-caption h2 a {
+    font-size: 19px;
+  }
+
+  h1.blog-post-title {
+    font-size: 30px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+  }
+
+  .blog-list-page-main-content h2,
+  .blog-list-page-main-content h3 {
+    font-size: 18px;
+  }
+
+  .blog-list-page-main-content {
+    font-size: 16px;
+    padding: 0 1.5em 1.5em 1.25em;
+  }
+
+  .blog-list-page-main-content li {
+    margin-bottom: .6em;
+  }
+
+  .blog-list-page-main-content p {
+    margin-bottom: 21px;
+  }
+} 
+
+@media only screen and (max-width: 619px) {
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    width: 127px !important;
+  }
+}  
+
+/* small */
+@media only screen and (max-width: 520px) {
+  .carousel-caption {
+    bottom: 18%;
+  }
+
+  .blog-list-page-main-content h2,
+  .blog-list-page-main-content h3 {
+    font-size: 16px;
+  }
+
+  .blog-list-page-main-content {
+    font-size: 14px;
+  }
+
+  .featured-stories .col-xs-6 {
+    height: 235px;
+  }
+
+  h1.blog-post-title {
+    font-size: 24px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+/* small */
+@media only screen and (max-width: 490px) {
+  .featured-stories .col-xs-6 {
+    height: 220px;
+  }
+}         
+
+@media only screen and (max-width: 465px) {
+  .carousel-caption {
+    bottom: 14%;
+  }
+} 
+
+@media only screen and (max-width: 447px) {
+  .carousel-caption {
+    bottom: 12%;
+  }
+}         
+
+@media only screen and (max-width: 435px) {
+  .carousel-inner {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    bottom: 14%;
+  }
+}                           
+
+/* iPhone 6 Plus Portrait */
+@media only screen and (max-width: 414px) {
+  .link-mycentral,
+  .link-canvas,
+  .link-library,
+  .link-calendar,
+  .link-ead,
+  .link-office365,
+  .link-email,
+  .link-facultysites,
+  .link-maps,
+  .link-blog,
+  .link-briefcase,
+  .link-parking,
+  .link-dining,
+  .link-events,
+  .link-activity {
+    margin-left: 5px;
+    width: 155px !important;
+  } 
+
+  .carousel-caption {
+    bottom: 12%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .carousel-caption h2 a {
+    font-size: 17px;
+    line-height: 1;
+  }
+}  
+
+@media only screen and (max-width: 400px) {
+  .featured-stories .col-xs-6 {
+    height: 205px;
+  }
+}    
+
+/* iPhone 5 Portrait */
+@media only screen and (max-width: 375px) {
+  .carousel-caption {
+    bottom: 12%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .carousel-caption h2 a {
+    font-size: 16px;
+    line-height: 1;
+  }
+} 
+
+/* iPhone 5 Portrait */
+@media only screen and (max-width: 320px) {
+  .carousel-caption {
+    bottom: 1%;
+  }
+
+  .featured-stories .col-xs-6 {
+    height: 280px;
+  }
+}  

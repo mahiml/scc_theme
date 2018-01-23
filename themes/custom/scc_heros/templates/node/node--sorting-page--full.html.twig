@@ -1,0 +1,160 @@
+{% set classes = [
+node.bundle|clean_class,
+node.isPromoted() ? 'is-promoted',
+node.isSticky() ? 'is-sticky',
+not node.isPublished() ? 'is-unpublished',
+view_mode ? view_mode|clean_class,
+'clearfix',
+] %}
+{% set render_with_links = 0 %}
+{% if content['field_sorting_tiles']["#items"]|length > 0 %}
+    {% set peek_node =  content['field_sorting_tiles']["#items"][0].entity %}
+    {% if peek_node.field_top_links and peek_node.field_top_links|length > 0 %}
+        {% set render_with_links = 1 %}
+    {% endif %}
+{% endif %}
+{% if render_with_links == 0 %}
+    <div{{ attributes.addClass(classes) }}>
+        <div{{ content_attributes.addClass('content') }}>
+            <div class="container-fluid small-screen-program-padding">
+                <div class="container sc-single-column">
+                    <div class="row">
+                        <div class="col-md-12 program-page-secondary-content">
+                            <h1 class="programs-title">{{ node.title.0.value }}</h1>
+                            {{ content['body'] }}
+                        </div>
+                    </div>
+                </div>
+                {% if  content['field_sorting_tiles']["#items"]|length > 0 %}
+                    {% set items = content['field_sorting_tiles']["#items"] %}
+                    {% set size = items|length -1 %}
+                    {% set factor = 3 %}
+                    {% if (size+1) <= 3 %}
+                        {% set factor = size+1 %}
+                    {% elseif (size+1) is divisible by(4) %}
+                        {% set factor = 4 %}
+                    {% elseif (size+1) is divisible by(3) %}
+                        {% set factor = 3 %}
+                    {% endif %}
+                    {% set should_close = 0 %}
+                    <div class="container">
+                        <div class="row">
+                            {% for index in 0..size %}
+                                {% set node =  content['field_sorting_tiles']['#items'][index].entity %}
+                                {% set is_external_url = 0 %}
+                                {% set truncated_title =  node.title.0.value|striptags|length > 100 ? node.title.0.value|striptags|slice(0,100) ~ '...' : node.title.0.value|striptags %}
+                                {% if node.field_external_url.0.url and node.field_external_url.0.url is not empty %}
+                                    {% set is_external_url = 1 %}
+                                    {% set link_url = node.field_external_url.0.url|length > 0 ? node.field_external_url.0.url :  path('entity.node.canonical', {'node': node.nid.0.value }) %}
+                                {% else %}
+                                    {% set link_url = path('entity.node.canonical', {'node': node.nid.0.value }) %}
+                                {% endif %}
+                                {% if node.field_img.0.entity.uri.value and node.field_img.0.entity.uri.value is not empty %}
+                                    {% set img_url = node.field_img.0.entity.fileuri %}
+                                    {% set img_alt = node.field_img.0.alt %}
+                                {% else %}
+                                    {% set img_url = get_image_uri(node,'field_img') %}
+                                    {% set img_alt = 'Seattle Central College' %}
+                                {% endif %}
+                                <div class="{% if factor == 3 %} col-xs-6 col-sm-4 {% elseif factor == 4 %} col-xs-6 col-sm-3 {% elseif factor == 2 %} col-xs-6 {% else %} col-xs-6 col-sm-3 {% endif %} programs-module">
+                                    <a tabindex="0"
+                                       href="{{ link_url }} " {% if is_external_url == 1 %} target="_blank"{% endif %}>
+                                        <div style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url({{ file_url(img_url) }}); background-size: cover;"
+                                             class="programs-module">
+                                            <h3 class="programs-module-title">{{ truncated_title }}
+                                            </h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 program-page-secondary-content">
+                        {{ content['field_sorting_paragraph'] }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% elseif render_with_links == 1 %}
+    <div{{ attributes.addClass(classes) }}>
+        <div{{ content_attributes.addClass('content') }}>
+            <div class="container-fluid small-screen-program-padding">
+                <div class="container sc-single-column">
+                    <div class="row">
+                        <div class="col-md-12 program-page-secondary-content">
+                            <h1 class="programs-title">{{ node.title.0.value }}</h1>
+                            {{ content['body'] }}
+                        </div>
+                    </div>
+                </div>
+                {% if  content['field_sorting_tiles']["#items"]|length > 0 %}
+                    {% set items = content['field_sorting_tiles']["#items"] %}
+                    {% set size = items|length -1 %}
+                    {% set factor = 3 %}
+                    {% if (size+1) <= 3 %}
+                        {% set factor = size+1 %}
+                    {% elseif (size+1) is divisible by(4) %}
+                        {% set factor = 4 %}
+                    {% elseif (size+1) is divisible by(3) %}
+                        {% set factor = 3 %}
+                    {% endif %}
+                    {% set should_close = 0 %}
+                    <div class="container sc-sortingcardlists">
+                        <div class="row">
+                            {% for index in 0..size %}
+                                {% set node =  content['field_sorting_tiles']['#items'][index].entity %}
+                                {% set is_external_url = 0 %}
+                                {% set truncated_title =  node.title.0.value|striptags|length > 100 ? node.title.0.value|striptags|slice(0,100) ~ '...' : node.title.0.value|striptags %}
+                                {% if node.field_external_url.0.url and node.field_external_url.0.url is not empty %}
+                                    {% set is_external_url = 1 %}
+                                    {% set link_url = node.field_external_url.0.url|length > 0 ? node.field_external_url.0.url :  path('entity.node.canonical', {'node': node.nid.0.value }) %}
+                                {% else %}
+                                    {% set link_url = path('entity.node.canonical', {'node': node.nid.0.value }) %}
+                                {% endif %}
+                                {% if node.field_img.0.entity.uri.value and node.field_img.0.entity.uri.value is not empty %}
+                                    {% set img_url = node.field_img.0.entity.fileuri %}
+                                    {% set img_alt = node.field_img.0.alt %}
+                                {% else %}
+                                    {% set img_url = get_image_uri(node,'field_img') %}
+                                    {% set img_alt = 'Seattle Central College' %}
+                                {% endif %}
+                                <div class="{% if factor == 3 %} col-xs-12 col-sm-4 {% elseif factor == 4 %} col-xs-12 col-sm-3 {% elseif factor == 2 %} col-xs-12 {% else %} col-xs-12 col-sm-3 {% endif %} ">
+                                    <div class="sortingcard sc-landing-link-boxes">
+                                        <img style="width:100%" src="{{ file_url(img_url) }}" alt="{{ img_alt }}">
+                                        <div class="sortingcardcontainer">
+                                            <h3>{{ truncated_title }}</h3>
+                                            <ul>
+                                                {% if node.field_top_links and peek_node.field_top_links|length > 0 %}
+                                                    {% set link_size = node.field_top_links|length-1 %}
+                                                    {% for index2 in 0..link_size %}
+                                                        <li><a href="{{ node.field_top_links[index2].url }}"
+                                                               target="_blank"> {{ node.field_top_links[index2].title }} </a>
+                                                        </li>
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 program-page-secondary-content">
+                        {{ content['field_sorting_paragraph'] }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+    {{ content['field_second_hero'] }}
+

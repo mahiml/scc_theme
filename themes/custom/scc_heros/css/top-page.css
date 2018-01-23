@@ -1,0 +1,1102 @@
+.bg-blue {
+    background-color: #0074d9 !important;
+    color: #fff !important;
+}
+
+.bg-black {
+    background-color: #111 !important;
+    color: #fff !important;
+    padding: 20px;
+}
+
+.bg-black p {
+    font-weight: 300;
+}
+
+.enroll-now-smallscreens {
+    display: none;
+}
+
+.enroll-now-desktop {
+    border-radius: 2px 2px 0 0;
+    display: block;
+    margin-top: 775px;
+    max-width: 570px;
+    margin-left: 80px;
+}
+
+.enroll-now-desktop-ca {
+    border-radius: 2px 2px 0 0;
+    display: block;
+    margin-top: 823px;
+    max-width: 570px;
+    margin-left: 80px;
+}
+
+.enroll-now-desktop-cw {
+    border-radius: 2px 2px 0 0;
+    display: block;
+    margin-top: 775px;
+    max-width: 670px;
+    margin-left: 80px;
+}
+
+.enroll-now-desktop-wide {
+    border-radius: 2px 2px 0 0;
+    display: block;
+    margin-top: 775px;
+    max-width: 700px;
+    margin-left: 80px;
+}
+
+.give-now-desktop-foundation {
+    border-radius: 2px 2px 0 0;
+    display: block;
+    margin-top: 768px;
+    max-width: 777px;
+    margin-left: 80px;
+}
+
+h1.site-section-title-minimal {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #000;
+}
+
+h2.site-section-quote {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px #000;
+}
+
+h1.site-section-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px #000;
+}
+
+.jumbotron {
+    background-color: #eee;
+    background-size: cover;
+    color: inherit;
+    height: 1000px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+p.enroll-cta {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.programs-title, 
+.news-feed-title {
+    border-bottom: 5px solid #ffc628;
+    color: #0066a1;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 20px 10px 7px 0;
+    margin-bottom: 30px;
+}
+
+.jumbotron-news {
+    background: #eee !important;
+    background: -webkit-linear-gradient(#fff, #f0f0f0) !important;
+    background: -o-linear-gradient(#fff, #f0f0f0) !important;
+    background: -moz-linear-gradient(#fff, #f0f0f0) !important;
+    background: linear-gradient(#fff, #f0f0f0) !important;
+    color: #111 !important;
+    background-size: cover;
+    color: inherit;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
+
+.jumbotron-stats {
+    background-color: #0066a1;
+    background-size: cover;
+    color: inherit;
+    margin-bottom: 0;
+    min-height: 0;
+    padding: 80px 20px 70px 20px;
+}
+
+.jumbotron-stats hr {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 45%;
+}
+
+.jumbotron-short {
+    background-color: #eee;
+    background-size: cover;
+    color: inherit;
+    height: 500px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+p.sc-stats-number {
+    color: #ffc628;
+    font-family: "futura-pt", Futura, Helvetica, Arial, sans-serif;
+    font-size: 7em;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 3px 3px #111;
+}
+
+p.sc-stats-text {
+    color: #ffc628;
+    font-size: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px #111;
+}
+
+.program-page-main-content, 
+.program-page-secondary-content,
+.program-page-main-content-getstarted {
+    font-size: 24px;
+    line-height: 1.5;
+    padding-bottom: 1.5em;
+}
+
+.program-page-main-content .basic-title, 
+.program-page-secondary-content .basic-title,
+.program-page-main-content-getstarted .basic-title  {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.program-page-main-content-getstarted a,
+.program-page-secondary-content a,
+.program-page-secondary-content p a, 
+.program-page-secondary-content address a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.program-page-main-content-getstarted a:hover,
+.program-page-secondary-content a:hover,
+.program-page-secondary-content p a:hover,
+.program-page-secondary-content p a:focus,
+.program-page-secondary-content address a:hover,
+.program-page-secondary-content address a:focus {
+    background-color: #ffce46;
+    color: #0000c1;
+    text-decoration: underline;
+}
+
+.program-page-main-content-getstarted .btn-primary,
+.program-page-main-content .btn-primary,
+.program-page-secondary-content .btn-primary {
+    color: #002c46;
+    background-color: #ffc628;
+    border: 1px solid #ffc628;
+    text-decoration: none;
+}
+
+.type-of-student-large-screen.program-page-main-content-getstarted.btn-primary 
+.type-of-student-small-screen.program-page-main-content-getstarted.btn-primary {
+    color: #fff !important;
+    background-color: transparent !important;
+    border: 2px solid #fff !important;
+    text-decoration: none !important;
+}
+
+.program-page-main-content-getstarted .btn-primary:focus,
+.program-page-main-content .btn-primary:focus,
+.program-page-main-content .btn-primary.focus,
+.program-page-secondary-content .btn-primary:focus,
+.program-page-secondary-content .btn-primary.focus {
+    color: #fff;
+    background-color: #0066a1;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.type-of-student-large-screen.program-page-main-content-getstarted.btn-primary:focus,
+.type-of-student-small-screen.program-page-main-content-getstarted.btn-primary:focus {
+    color: #111 !important;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    text-decoration: none !important;
+}
+
+.program-page-main-content-getstarted .btn-primary:hover,
+.program-page-main-content .btn-primary:hover,
+.program-page-secondary-content .btn-primary:hover {
+    color: #fff;
+    background-color: #0066a1;
+    border: 1px solid #0066a1;
+    text-decoration: none;
+}  
+
+.type-of-student-large-screen.program-page-main-content-getstarted.btn-primary:hover,
+.type-of-student-small-screen.program-page-main-content-getstarted.btn-primary:hover {
+    color: #111 !important;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    text-decoration: none !important;
+} 
+
+.program-page-main-content .btn-success,
+.program-page-secondary-content .btn-success {
+    color: #fff;
+    background-color: #0066a1;
+    border: 1px solid #0066a1;
+    text-decoration: none;
+}
+
+.program-page-main-content .btn-success:focus,
+.program-page-main-content .btn-success.focus,
+.program-page-secondary-content .btn-success:focus,
+.program-page-secondary-content .btn-success.focus {
+    color: #002c46;
+    background-color: #ffc628;
+    border: 1px solid #ffc628;
+    text-decoration: none;
+}
+
+.program-page-main-content .btn-success:hover,
+.program-page-secondary-content .btn-success:hover {
+    color: #002c46;
+    background-color: #ffc628;
+    border: 1px solid #ffc628;
+    text-decoration: none;
+}     
+
+.program-page-main-content-getstarted h2,
+.program-page-main-content h2, .program-page-secondary-content h2,
+.program-page-main-content h3, .program-page-secondary-content h3,
+.program-page-main-content h4, .program-page-secondary-content h4,
+.program-page-main-content h5, .program-page-secondary-content h5,
+.program-page-main-content h6, .program-page-secondary-content h6 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.program-page-main-content-getstarted h2,
+.program-page-main-content h2, 
+.program-page-secondary-content h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+
+.program-page-main-content h3, 
+.program-page-secondary-content h3 {
+    border-bottom: 4px solid #eee;
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 16px;
+    margin-top: 36px;
+}
+
+.program-page-main-content p, .program-page-secondary-content p, 
+.program-page-main-content ol, .program-page-secondary-content ol, 
+.program-page-main-content ul, .program-page-secondary-content ul {
+    margin: 0 0 1em;
+}
+
+.program-page-main-content ol, .program-page-secondary-content ol, 
+.program-page-main-content ul, .program-page-secondary-content ul {
+    margin: 0 0 1em -12px;
+}
+
+.program-page-main-content ul li, .program-page-secondary-content ul li, 
+.program-page-main-content ol li, .program-page-secondary-content ol li {
+    margin-bottom: 8px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    margin: 18px 0 30px 0;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.card img {
+    border-radius: 2px 2px 0 0;    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 2px;
+}
+
+.card-container {
+    padding: 2px 16px;
+}
+
+.cards-bottom {
+    margin-bottom: 30px;
+} 
+
+.article-headline {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+h4.article-headline,
+a.article-link {
+    color: #222;
+}
+
+.sc-quote-text {
+    font-size: 30px;
+    font-weight: 500;
+    color: #777;
+    line-height: 40px;
+    margin-top: 24px !important;
+}
+
+.sc-person-quote {
+    color: #333;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+.breadcrumb-container {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.breadcrumb {
+  background-color: #fff;
+  border-radius: 2px;
+  color: #555;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 0 4px;
+}
+
+.breadcrumb a {
+  color: #555;
+}
+
+.breadcrumb>.active {
+  color: #555;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sc-sortingcardlists {
+    margin: 40px auto;
+}
+
+.sc-landing-link-boxes {
+    height: 455px;
+}
+
+.sc-landing-link-boxes h3 {
+    color: #111;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.sc-landing-link-boxes ul {
+    padding-left: 1.5em;
+}
+
+.sc-landing-link-boxes li {
+    color: #111;
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.sc-landing-link-boxes li a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.sc-landing-link-boxes li a:hover,
+.sc-landing-link-boxes li a:focus {
+    background: #ffc628;
+    color: #0000c2;
+    text-decoration: underline;
+}
+
+.sortingcard {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.sortingcard img {
+    border-radius: 2px 2px 0 0;
+}
+
+.sortingcardcontainer {
+    padding: 2px 20px;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+.btn-primary {
+    margin-left: 0 !important;
+}
+
+@media only screen and (max-width: 1920px) {
+    .jumbotron {
+        height: 920px;
+    }
+
+    .enroll-now-desktop {
+        display: block;
+        margin-top: 695px;
+        max-width: 520px;
+    }
+
+    .enroll-now-desktop-ca {
+        display: block;
+        margin-top: 743px;
+    }
+
+    .enroll-now-desktop-cw {
+        display: block;
+        margin-top: 695px;
+        max-width: 660px;
+    }
+
+    .enroll-now-desktop-wide {
+        margin-top: 695px;
+        max-width: 700px;
+    }
+
+    .give-now-desktop-foundation {
+        display: block;
+        margin-top: 688px;
+    }
+}    
+
+@media only screen and (max-width: 1680px) {
+    .jumbotron {
+        height: 840px;
+    }
+
+    .enroll-now-desktop {
+        margin-top: 627px;
+    }
+
+    .enroll-now-desktop-ca {
+        margin-top: 669px;
+    }
+
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide {
+        margin-top: 627px;
+    }
+
+    .give-now-desktop-foundation {
+        margin-top: 608px;
+    }
+
+    h1.site-section-title {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .jumbotron {
+        height: 740px;
+    }
+
+    .jumbotron-short {
+        height: 450px;
+        margin: 0;
+    }
+
+    .enroll-now-desktop {
+        margin-top: 527px;
+        max-width: 520px;
+    }
+
+    .enroll-now-desktop-ca {
+        margin-top: 569px;
+        max-width: 520px;
+    }
+
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide {
+        margin-top: 527px;
+        max-width: 600px;
+    }
+
+    .give-now-desktop-foundation {
+        margin-top: 527px;
+        max-width: 666px;
+    }
+
+    h1.site-section-title-minimal {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    h2.site-section-quote {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    h1.site-section-title {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .jumbotron-short {
+        height: 420px;
+        margin: 0;
+    }
+}    
+
+@media only screen and (max-width: 1440px) {
+    .jumbotron {
+        height: 740px;
+    }
+
+    .enroll-now-desktop,
+    .enroll-now-desktop-ca,
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide,
+    .give-now-desktop-foundation {
+        margin-left: 0;
+    }
+    
+    .enroll-now-desktop-ca {
+        margin-top: 569px;
+    }   
+
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide {
+        margin-top: 527px;
+    }  
+
+    .give-now-desktop-foundation {
+        margin-top: 387px;
+    }
+
+    .foundation-branding img {
+        width: 125px;
+    }
+
+    h1.site-section-title {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .jumbotron {
+        height: 600px;
+    }
+
+    .jumbotron-short {
+        height: 360px;
+        margin: 0;
+    }
+
+    .enroll-now-desktop {
+        margin-top: 387px;
+        max-width: 450px;
+    }
+
+    .enroll-now-desktop-ca {
+        margin-top: 429px;
+    }  
+
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide {
+        margin-top: 387px;
+    } 
+
+    .give-now-desktop-foundation {
+        margin-top: 387px;
+    }
+}    
+
+@media only screen and (max-width: 1280px) {
+    .jumbotron {
+        height: 630px;
+    }
+
+    .enroll-now-desktop {
+        margin-top: 429px;
+        max-width: 450px;
+    }
+
+    .enroll-now-desktop-ca {
+        margin-top: 465px;
+    }  
+
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide {
+        margin-top: 429px;
+    } 
+
+    .give-now-desktop-foundation {
+        margin-top: 417px;
+    } 
+
+    h1.site-section-title {
+        font-size: 36px;
+    }
+
+    .programs-title, 
+    .news-feed-title {
+        font-size: 48px;
+    }
+
+    p.enroll-cta {
+        font-size: 16px;
+    }
+    
+    .program-page-main-content-getstarted,
+    .program-page-main-content, 
+    .program-page-secondary-content, 
+    .program-page-main-content p.enroll-cta {
+        font-size: 21px;
+        padding-top: 1.15em;
+    }
+
+    .program-page-main-content-getstarted .basic-title,
+    .program-page-main-content .basic-title {
+        margin-bottom: 21px;
+        margin-top: 4px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+
+    .program-page-main-content-getstarted h2,
+    .program-page-main-content h2, 
+    .program-page-secondary-content h2 {
+        font-size: 42px;
+        font-weight: 700;
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+
+    .program-page-main-content h3, 
+    .program-page-secondary-content h3 {
+        color: #111;
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+    .program-page-sidebar h4.list-group-item-heading {
+        font-size: 18px;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    .breadcrumb>.active {
+        font-size: 13px;
+    }
+
+    p.sc-person-quote {
+        font-size: 14px;
+        text-align: center !important;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .jumbotron-short {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}    
+
+@media only screen and (max-width: 1024px) {
+    .jumbotron {
+        height: 420px;
+    }
+
+    .enroll-now-desktop, 
+    .enroll-now-desktop-ca, 
+    .enroll-now-desktop-cw,
+    .enroll-now-desktop-wide,
+    .give-now-desktop-foundation {
+        display: none;
+    }
+
+    .program-page-main-content ol, .program-page-secondary-content ol, 
+    .program-page-main-content ul, .program-page-secondary-content ul {
+        margin: 0 0 .8em -8px;
+    }
+
+    .enroll-now-smallscreens {
+        display: block;
+        padding: 20px;
+    }
+
+    .foundation-branding img {
+        width: 105px;
+    }
+
+    h1.site-section-title-minimal {
+        color: #111;
+        font-size: 16px;
+        margin-bottom: 8px;
+        text-shadow: none;
+    }
+
+    h2.site-section-quote {
+        color: #111;
+        font-size: 30px;
+        margin-bottom: 14px;
+        text-shadow: none;
+    }
+
+    h1.site-section-title {
+        color: #111;
+        font-size: 30px;
+        text-shadow: none;
+    }
+
+    .programs-title, 
+    .news-feed-title {
+        font-size: 42px;
+    }
+
+    .article-headline {
+        font-size: 16px;
+    }
+
+    p.enroll-cta {
+        font-size: 18px;
+    }
+
+    .sc-quote-text {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 20px !important;
+    }
+
+    .sc-person-quote {
+        font-size: 14px;
+    }
+    
+    .program-page-main-content, 
+    .program-page-secondary-content, 
+    .program-page-main-content p.enroll-cta {
+        font-size: 18px;
+        padding: 0 24px 24px 24px;
+    }
+
+    .program-page-main-content-getstarted,
+    .program-page-main-content-getstarted p.enroll-cta {
+        font-size: 18px;
+        padding: 0 0 24px 0;
+    }
+
+    .program-page-main-content .small-screen-section-title {
+        display: block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .program-page-main-content .small-screen-section-title a {
+        background-color: #eee;
+        border-bottom: none;
+        color: #111;
+        font-weight: 500;
+    }
+
+    .program-page-main-content .small-screen-section-title a:hover {
+        background-color: #eee;
+        border-bottom: none;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .program-page-main-content .basic-title {
+        margin-bottom: 24px;
+        margin-top: 20px;
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+
+    .program-page-main-content h2, 
+    .program-page-secondary-content h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-top: 26px;
+        margin-bottom: 12px;
+    }
+
+    .program-page-main-content h3, 
+    .program-page-secondary-content h3 {
+        font-size: 24px;
+        margin-top: 26px;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .sc-sortingcardlists {
+        margin: 20px auto;
+    }
+
+    .sc-landing-link-boxes {
+        height: auto;
+    }
+
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+
+    .jumbotron-short {
+        height: 250px;
+    }
+}    
+
+@media only screen and (max-width: 767px) {
+    .breadcrumb-container {
+        padding: 30px 25px 0 25px;
+    }
+
+    p.sc-stats-number {
+        font-size: 6em;
+    }
+
+    p.sc-stats-text {
+        font-size: 1.725em;
+    }
+
+    .programs-title, 
+    .news-feed-title {
+        font-size: 36px;
+    }
+
+    p.enroll-cta {
+        font-size: 16px;
+    }
+
+    .sc-quote-text {
+        color: #111;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 18px !important;
+    }
+
+    .sc-person-quote {
+        color: #111;
+        font-size: 14px;
+    }
+    
+    .program-page-main-content-getstarted,
+    .program-page-main-content, 
+    .program-page-secondary-content, 
+    .article-headline {
+        font-size: 16px;
+    }
+    
+    .program-page-main-content-getstarted .basic-title,
+    .program-page-main-content .basic-title {
+        margin-bottom: 21px;
+        margin-top: 16px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+    
+    .program-page-main-content-getstarted h2,
+    .program-page-main-content h2, 
+    .program-page-secondary-content h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .program-page-main-content h3, 
+    .program-page-secondary-content h3 {
+        font-size: 21px;
+        margin-top: 22px;
+        margin-bottom: 8px;
+    }
+
+    .jumbotron-news {
+        padding: 0 16px 12px 16px;
+    }
+
+    .jumbotron-short {
+        height: 200px;
+    }
+
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .breadcrumb-container {
+        padding: 25px 25px 2px 25px;
+    }
+
+    .breadcrumb {
+        font-size: 10px;
+    }
+
+    .breadcrumb>.active {
+        font-size: 11px;
+    }
+
+    .jumbotron {
+        height: 300px;
+    }
+
+    .jumbotron-short {
+        height: 150px;
+    }
+
+    p.sc-stats-number {
+        font-size: 5em;
+        text-shadow: 2px 2px #111;
+    }
+
+    p.sc-stats-text {
+        font-size: 1.25em;
+        text-shadow: 1px 1px #111;
+    }
+
+    .foundation-branding img {
+        width: 100px;
+    }
+
+    h1.site-section-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .programs-title, 
+    .news-feed-title {
+        font-size: 30px;
+        border-bottom: 4px solid #ffc628;
+    }
+
+    .program-page-main-content h3, 
+    .program-page-secondary-content h3 {
+        border-bottom: 3px solid #eee;
+    }
+
+    p.enroll-cta {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .sc-quote-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 18px !important;
+    }
+
+    .sc-person-quote {
+        font-size: 12px;
+    }
+    
+    .program-page-main-content-getstarted,
+    .program-page-main-content, 
+    .program-page-secondary-content {
+        font-size: 16px;
+        padding: 0 10px 18px 10px;  
+    }
+
+    .program-page-main-content .small-screen-section-title, 
+    .program-page-main-content p.enroll-cta {
+        font-size: 12px;
+    }
+
+    .details-page-main-content .basic-title {
+        margin-bottom: 21px;
+        margin-top: 10px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .card {
+        margin: 4px 0 25px 0;
+    }
+
+    .card-container {
+        padding: 2px 6px;
+    }
+
+    .article-headline {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .enroll-now-smallscreens .btn, 
+    .read-more-smallscreens .btn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .jumbotron-news {
+        padding: 0 12px 0 12px;
+    }
+}

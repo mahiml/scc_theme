@@ -1,0 +1,36 @@
+<div class="container">
+	<h2>Reed's template  NEW!!!</h2>
+
+	<h1 class="programs-title">{{ node.title.0.value }}</h1>
+
+	<img class="img-responsive" src="{{ file_url(node.field_img.0.entity.uri.value) }}" alt=" {{ node.field_img.alt }} "/>
+        
+   
+    {% set size = content['field_links']['#items']|length - 1 %} 
+	<ul>
+        {% for index in 0..size %}
+            <li>
+                <a href="{{ content['field_links'][index]['#url'] }}">{{ content.field_links[index]['#title'] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="row">
+    	{% for index in 0..size %}
+	    	<div class="{% if factor == 3 %} col-xs-6 col-sm-4 {% elseif factor == 4 %} col-xs-6 col-sm-3 {% elseif factor == 2 %} col-xs-6 {% else %} col-xs-6 col-sm-3 {% endif %}">
+	            <a href="{{ content['field_links'][index]['#url'] }}">{{ content.field_links[index]['#title'] }}</a>
+	        </div>
+        {% endfor %}
+    </div>
+  
+ {% set size = content['field_img']['#items']|length - 1 %}
+    <div class="row">
+    	{% for index in 0..size %}
+             {% set img_node = content['field_img']['#items'][index] %}
+	    	<div class="col-xs-6 col-sm-3">
+	            <img src="{{ file_url(img_node.entity.uri.value) }}"
+         alt="{{ img_node.alt }}" class="img-responsive"/> 
+	        </div>
+        {% endfor %}
+    </div>
+	
+</div>

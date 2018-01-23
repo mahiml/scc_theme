@@ -1,0 +1,14 @@
+<div class="col-md-4 text-center">
+    {% if node.field_local_img.entity.uri.value and  node.field_local_img.entity.uri.value is not empty %}
+        {% set img_uri =  node.field_local_img.entity.fileuri %}
+        {% set img_alt = content['field_local_img']['#items'].0.alt %}
+    {% else %}
+        {% set img_uri =  node.field_newscenter_image_url.0.url %}
+        {% set img_alt = "News Center Image URL" %}
+    {% endif %}
+    <img class="img-responsive img-circle photo-section hideme"
+         src="{{ file_url(img_uri) }}"
+         alt="{{ img_alt }}"/>
+    <p class="quote-section">{{ node.body.value|striptags }} </p>
+    <span class="person-section"> {{ node.field_subtitle.0.value }} </span>
+</div>

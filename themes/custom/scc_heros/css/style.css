@@ -1,0 +1,382 @@
+body {
+    color: #fff;
+    background-color: #111;
+    padding-top: 50px;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*.navbar-default {
+    border-style: none;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    float: left;
+    font-family: Futura;
+    font-size: 2.625em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    margin: 16px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: left;
+        margin: 8px;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -5px;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 22px;
+        padding-bottom: 15px;
+    }
+}
+*/
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("images/cal-anderson-park-seattle-central.jpg");
+
+    /* Set a specific height */
+    min-height: 750px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("images/rocketry-program-seattle-central.jpg");
+
+    /* Set a specific height */
+    min-height: 720px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url("images/healthcare-students-seattle-central.jpg");
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 {
+    /* The image used */
+    background-image: url("images/broadway-campus-seattle-central.jpg");
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sc-front-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+}
+
+.sc-front-container a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: .07em solid #fff;
+    -webkit-transition: color 0.2s, border 0.2s, border-color 0.2s;
+    transition: color 0.2s, border 0.2s, border-color 0.2s;
+}
+
+.sc-front-container a:hover {
+    color: #ffdc00;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+@media (min-width: 1300px) {
+    .sc-front-container {
+        width: 1270px;
+        position: relative;
+    }
+}
+
+.jumbotron {
+    position: relative;
+    background: #000 url("images/web-students-seattle-central.jpg") no-repeat top;
+    width: 100%;
+    min-height: 725px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.jumbotron-stats {
+    position: relative;
+    background: #000 url("images/broadway-seattle-central-at-night.jpg") no-repeat top;
+    width: 100%;
+    min-height: 725px;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.jumbotron-stats hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 0;
+    border-top: 1px solid #999;
+    width: 35%;
+}
+
+.bg-primary {
+    color: #fff;
+    background-color: #111;
+}
+
+.bg-primary a {
+    color: #ffdc00;
+}
+
+.sc-front-cta {
+    padding: 6em 0;
+}
+
+.sc-front-faces-of-central-hashtag, .sc-front-google-map-title {
+    padding: 20px 10px 10px 0px;
+}
+
+.sc-front-faces-of-central-hashtag h2, .sc-front-google-map-title h2 {
+    font-size: 1.313em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1.sc-front-title, h2.sc-front-title {
+    font-size: 1.313em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sc-front-faces-of-central-spotlight blockquote {
+    border-left: 5px solid #222;
+    margin: .5em 0 2em 0;
+}
+
+.sc-front-cta p {
+    font-size: 1.875em;
+    margin-bottom: 20px;
+}
+
+p.mega-sc-front-text, p.sc-stats-number {
+    font-size: 5em;
+    line-height: 120%;
+}
+
+p.sc-stats-number {
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1px;
+}
+
+p.sc-stats-text {
+    font-size: 1.5em;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #ffc627;
+    border-color: #ffc627;
+    border-radius: 0;
+    font-size: 1.5em;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #111;
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #111;
+    border-color: #fff;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #0074d9;
+    border-color: #0074d9;
+    border-radius: 0;
+    font-size: 1.5em;
+}
+
+.btn-default:focus,
+.btn-default.focus {
+    color: #fff;
+    background-color: #111;
+    border-color: #fff;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #111;
+    border-color: #fff;
+}
+
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    line-height: 1.42857143;
+    background-color: #111;
+    border: none;
+    border-radius: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.footer {
+    border-bottom: 5px solid #0074d9;
+    background: #111 url("images/corner-chevron-blue.png") right bottom no-repeat;
+    padding-top: 20px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    color: #ddd;
+    text-decoration: none;
+    border-bottom: none;
+    font-size: 1.313em;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav.sidenav-left {
+    left: 0;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top left corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 36px;
+    margin-right: 50px;
+}

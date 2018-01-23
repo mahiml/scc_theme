@@ -1,0 +1,65 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+{% import _self as menus %}
+{{ menus.menu_links(items, attributes, 0, 0) }}
+
+{% macro menu_links(items, attributes, menu_level, count) %}
+    {% import _self as menus %}
+    {% if items %}
+        {% for item in items %}
+            {% if count == 0 %}
+                <h3 class="scc-sidenav-title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                {% set count = count+1 %}
+                <ul class="seattle-central-college-sidenav nav nav-pills nav-stacked">
+            {% else %}
+                {% set count = count+1 %}
+                {% set is_child_active = 0 %}
+                {% if item.below %}
+                    {% for item_looped in item.below %}
+                        {% if item_looped.in_active_trail %}
+                            {% set  is_child_active = 1 %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                {% set parent_classes = [item.below|length > 0 ? 'has-submenu',
+                item.in_active_trail ? 'active',] %}
+                {% if is_child_active == 1 %}
+                    {% set parent_classes =  ['has-submenu'] %}
+                {% endif %}
+                <li {{ item.attributes.addClass(parent_classes) }} >
+                    <a href="{{ item.url }}" {% if item.below %} {{ item.attributes.addClass(child_classes) }} {% endif %}>{{ item.title }} {% if item.below %}
+                            <span class="caret"></span>{% endif %}</a></li>
+                {% if item.below %}
+                    {% set item_classes = [
+                    item.in_active_trail ? 'active' : 'collapse',
+                    'scc-sidenav-second-level',
+                    ] %}
+                    <ul {{ item.attributes.addClass(item_classes) }} >
+                        {% set count = count+1 %}
+                        {% for item_sub in item.below %}
+                            {% set inner_class = [item_sub.in_active_trail ? 'active',] %}
+                            <li {{ item_sub.attributes.addClass(inner_class) }}><a
+                                        href="{{ item_sub.url }}">{{ item_sub.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </ul>
+{% endmacro %}

@@ -1,0 +1,53 @@
+{% set classes = [
+node.bundle|clean_class,
+node.isPromoted() ? 'is-promoted',
+node.isSticky() ? 'is-sticky',
+not node.isPublished() ? 'is-unpublished',
+view_mode ? view_mode|clean_class,
+'clearfix',
+] %}
+<div{{ attributes.addClass(classes) }}>
+    <div{{ content_attributes.addClass('content') }}>
+        <div class="container-fluid small-screen-program-padding">
+            <div class="container sc-single-column">
+                <div class="row">
+                    <div class="col-md-12 program-page-secondary-content">
+                        <h1 class="programs-title">{{ node.title.0.value }}</h1>
+                        {{ content['body'] }}
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">Student SID :</div>
+                    <div class="col-xs-6">{{ node.field_student_sid.0.value }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">Program :</div>
+                    <div class="col-xs-6">{{ node.field_attending_program.0.value}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">Year :</div>
+                    <div class="col-xs-6">{{ node.field_attending_year.0.value }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">Quarter :</div>
+                    <div class="col-xs-6">{{ node.field_attending_quarter.0.value }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">PIN :</div>
+                    <div class="col-xs-6">{{ node.field_student_dob_pin.0.value }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">Email :</div>
+                    <div class="col-xs-6">{{ node.field_student_email.0.value }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">Status :</div>
+                    <div class="col-xs-6">{{ node.field_student_state.0.value }}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

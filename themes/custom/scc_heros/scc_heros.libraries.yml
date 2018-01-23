@@ -1,0 +1,103 @@
+intro-styling:
+  css:
+    theme:
+      css/introjs.css: {}
+  js:
+      js/intro.js: {}
+  dependencies:
+      - bootstrap/theme
+
+
+main-front-styling:
+  css:
+    theme:
+      css/buttons.css: {}
+      css/jumbotron.css: {}
+      css/header.css: {}
+      css/footer.css: {}
+      css/megamenu.css: {}
+  js:
+      js/scc.js: {}
+      js/jquery-accessiblemegamenu.js: {}
+  dependencies:
+      - bootstrap/theme
+
+only-jumbotron-styling:
+  css:
+    theme:
+      css/jumbotron.css: {}
+
+header-styling:
+  css:
+    theme:
+      css/common.css: {}
+      css/header.css: {}
+      css/footer.css: {}
+      css/megamenu.css: {}
+  js:
+      js/scc.js: {}
+      js/jquery-accessiblemegamenu.js: {}
+  dependencies:
+      - bootstrap/theme
+
+page-details-styling:
+  css:
+    theme:
+      css/page-details.css: {}
+  js:
+      js/scc.js: {}
+
+grid-gallery-js:
+    js:
+      js/visual-arts.js: {}
+
+top-page-styling:
+  css:
+    theme:
+      css/top-page.css: {}
+  js:
+      js/scc.js: {}
+
+program-page-styling:
+  css:
+    theme:
+      css/program-page.css: {}
+  js:
+      js/scc.js: {}
+
+newscenter-styling:
+  css:
+    theme:
+      css/news.css: {}
+
+blog-styling:
+  css:
+    theme:
+      css/blog.css: {}
+  js:
+      js/scc.js: {}
+
+scc50th-library:
+  css:
+    theme:
+      css/50thCentral.css: {}
+  js:
+    js/functions.js: {}
+
+grid-gallery-styling:
+  css:
+    theme:
+      css/grid-gallery.css: {}
+  js:
+      js/rotate-patch.js: {}
+      js/gridGallery.min.js: {}
+
+vimeo.player:
+  remote: https://github.com/vimeo/player.js
+  version: 1.0.6
+  license:
+    name: BSD
+    url: https://github.com/vimeo/player.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    https://player.vimeo.com/api/player.js: { type: external, minified: true }

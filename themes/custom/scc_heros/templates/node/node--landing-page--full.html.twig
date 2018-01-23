@@ -1,0 +1,242 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+     Only "getter" methods (method names starting with "get", "has", or "is")
+     and a few common methods such as "id" and "label" are available. Calling
+     other methods (such as node.delete) will result in an exception.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{% if content['field_paragraphs']["#items"]|length < 4 %}
+    {% set classes = [
+        node.bundle|clean_class,
+        node.isPromoted() ? 'is-promoted',
+        node.isSticky() ? 'is-sticky',
+        not node.isPublished() ? 'is-unpublished',
+        view_mode ? view_mode|clean_class,
+        'clearfix',
+    ] %}
+    {% set link_title_to_icon_classes_map = {'MyCentral':'link-mycentral', 'Canvas':'link-canvas', 'Library':'link-library' , 'Academic Calendar':'link-calendar', 'Office365':'link-office365', 'Webmail':'link-email',
+        'EAD':'link-ead', 'Faculty Pages':'link-facultysites', 'Dining':'link-dining', 'Activity':'link-activity', 'Events':'link-events'} %}
+    <article{{ attributes.addClass(classes) }}>
+        <div{{ content_attributes.addClass('content') }}>
+            {% if content['field_top_links']['#items']|length > 0 %}
+                {% set size =  content['field_top_links']['#items']|length - 1 %}
+                <div class="container">
+                    <ul class="list-inline pull-right sc-landing-util">
+                        {% for index in 0..size %}
+                            <li role="presentation">
+                                <a href="{{ content['field_top_links'][index]['#url'] }}">{{ content['field_top_links'][index]['#title'] }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if  content['field_slider_stories']["#items"]|length > 0 %}
+                <div class="container content top-pot-box">
+                    <div class="row">
+                        <div class="col-xs-12 top-stories-slide">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"
+                                 data-interval="false">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    {% set items = content['field_slider_stories']["#items"] %}
+                                    {% set size = items|length -1 %}
+                                    {% for index in 0..size %}
+                                    {% if loop.first %}
+                                    <div class="item active">
+                                        {% else %}
+                                        <div class="item">
+                                            {% endif %}
+                                            {{ content['field_slider_stories'][index] }}
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                                   data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                                   data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            {{ content['body'] }}
+            {{ content['field_paragraphs'] }}
+            {{ content['field_things_to_do'] }}
+        </div>
+    </article>
+{% else %}
+    {% set classes = [
+        node.bundle|clean_class,
+        node.isPromoted() ? 'is-promoted',
+        node.isSticky() ? 'is-sticky',
+        not node.isPublished() ? 'is-unpublished',
+        view_mode ? view_mode|clean_class,
+        'clearfix',
+    ] %}
+    {% set link_title_to_icon_classes_map = {'MyCentral':'link-mycentral', 'Canvas':'link-canvas', 'Library':'link-library' , 'Academic Calendar':'link-calendar', 'Office365':'link-office365', 'Webmail':'link-email',
+        'EAD':'link-ead', 'Faculty Pages':'link-facultysites', 'Maps':'link-maps', 'Blog':'link-blog', 'Instructor Briefcase':'link-briefcase', 'Parking':'link-parking', 'Dining':'link-dining', 'Activity':'link-activity', 'Events':'link-events'} %}
+    <article{{ attributes.addClass(classes) }}>
+        <div{{ content_attributes.addClass('content') }}>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        {% if content['field_top_links']['#items']|length > 0 %}
+                        <div class="row">
+                            {% set size =  content['field_top_links']['#items']|length - 1 %}
+                            {% for index in 0..size %}
+                                <a href="{{ content['field_top_links'][index]['#url'] }}">
+                                    <div role="button" aria-label="{{ content['field_top_links'][index]['#title'] }}"
+                                         class="col-xs-6 col-md-3 {{ link_title_to_icon_classes_map[content['field_top_links'][index]['#title']] }}">
+                                    </div>
+                                </a>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                        {% if content['field_paragraphs']['#items']|length > 0 %}
+                            <div class="row">
+                                {% set size =  content['field_paragraphs']['#items']|length - 2 %}
+                                {% for index in 0..size %}
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="well sc-link-blue">
+                                            <h2>{{ content['field_paragraphs'][index]['#paragraph'].field_accordion_section_title.value|striptags|raw }}</h2>
+                                            {{ content['field_paragraphs'][index]['#paragraph'].field_accordion_section_body.0.entity.field_text.0.value|raw }}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h3 class="in-the-news-events">Latest from Seattle Central</h3>
+                        {% if  content['field_slider_stories']["#items"]|length > 0 %}
+                            <div class="row">
+                                {% set items = content['field_slider_stories']["#items"] %}
+                                {% set size = items|length -1 %}
+                                {% for index in 0..size %}
+                                    {% set node = content['field_slider_stories']["#items"][index].entity %}
+                                    <div class="col-xs-12 col-sm-6 sc-landing-news">
+                                        {% set has_img = false %}
+                                        {% set is_internal = 0 %}
+                                        {% set truncated_title =  node.title.0.value|striptags|length > 60 ? node.title.0.value|striptags|slice(0,60) ~ '...' : node.title.0.value|striptags %}
+                                        {% if node.field_newscenter_url.0.url and node.field_newscenter_url.0.url is not empty %}
+                                            {% set link_url = node.field_newscenter_url.0.url %}
+                                        {% else %}
+                                            {% set link_url = path('entity.node.canonical', {'node': node.nid.0.value }) %}
+                                        {% endif %}
+                                        {% if node.field_local_img.entity.uri.value and  node.field_local_img.entity.uri.value is not empty %}
+                                            {% set img_uri =  node.field_local_img.entity.fileuri %}
+                                            {% set img_alt = content['field_local_img']['#items'].0.alt %}
+                                            {% set is_internal = 1 %}
+                                        {% elseif node.field_img.0.entity.uri.value and node.field_img.0.entity.uri.value is not empty %}
+                                            {% set img_url = node.field_img.0.entity.fileuri %}
+                                            {% set img_alt = node.field_img.0.alt %}
+                                            {% set is_internal = 1 %}
+                                        {% elseif node.field_newscenter_image_url.0.url and node.field_newscenter_image_url.0.url is not empty %}
+                                            {% set img_uri =  node.field_newscenter_image_url.0.url %}
+                                            {% set img_alt = "News Center Image URL" %}
+                                        {% else %}
+                                            {% set img_url = get_image_uri(node,'field_img') %}
+                                            {% if img_url|length < 1 %}
+                                                {% set img_url = get_image_uri(node,'field_local_img') %}
+                                            {% endif %}
+                                            {% set img_alt = 'Seattle Central College' %}
+                                            {% set is_internal = 1 %}
+                                        {% endif %}
+                                        <img src="{% if is_internal == 1 %} {{ file_url(img_url) }} {% else %} {{ img_uri }} {% endif %}"
+                                             title="{{ truncated_title }}"
+                                             alt="{{ img_alt }} "
+                                             style="width:100%; border-bottom: 6px solid #ffc628; border-radius: 2px;"/>
+                                        <h3><a href="{{ link_url }}" title="{{ node.title.0.value|striptags }}">
+                                                {{ truncated_title }}
+                                            </a></h3>
+                                        {# content['field_slider_stories'][index] #}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    {{ content['body'] }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="height: 400px;">
+                <div class="row">
+                    <div class="col-xs-12">
+                        {% set size =  content['field_paragraphs']['#items']|length - 1 %}
+                        {{ content['field_paragraphs'][size]['#paragraph'].field_accordion_section_body.0.entity.field_text.0.value|raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+{% endif %}

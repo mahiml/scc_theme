@@ -1,0 +1,27 @@
+{% if title %}
+    <h3>{{ title }}</h3>
+{% endif %}
+{% set current_count = 0 %}
+{% set should_close = 0 %}
+{% for row in rows %}
+
+    {% if current_count >= 0 and current_count is divisible by(4) %}
+        <div class="row">
+        {% set should_close = 1 %}
+    {% endif %}
+    <div class="col-xs-6 col-sm-3">
+        {{ row.content }}
+    </div>
+    {% if (current_count+1) is divisible by(4) and should_close == 1 %}
+        {% set should_close = 0 %}
+        {% set current_count = 0 %}
+        </div>
+    {% else %}
+        {% if should_close == 1 %}
+            {% set current_count = current_count + 1 %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+    {% if should_close == 1 %}
+        </div>
+    {% endif %}
