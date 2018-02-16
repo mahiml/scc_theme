@@ -1,0 +1,14 @@
+{% if node.field_img_secondary.entity.uri and node.field_img_secondary.entity.uri is not empty %}
+    {% set img_url = node.field_img_secondary.entity.fileuri %}
+    {% set img_alt = content['field_img_secondary']['#items'].0.alt %}
+{% else %}
+    {% set img_url = get_image_uri(node,'field_img_secondary') %}
+    {% set img_alt = 'M. Rosetta Hunter Art Gallery' %}
+{% endif %}
+
+<div class="col-xs-12 col-sm-4">
+    <img class="img-responsive sc-artgallery-past-visuals" src="{{ file_url(img_url) }}" alt="{{ img_alt }}"/>
+    <div class="sc-bg-artgallery-past">
+    	<a href="{{ path('entity.node.canonical', {'node': node.id}) }}"><h3>{{ node.title.0.value }}</h3></a>
+	</div>
+</div>

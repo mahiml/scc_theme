@@ -1,0 +1,12 @@
+{% set classes = [
+    has_parent ? 'js-form-wrapper',
+    has_parent ? 'form-wrapper',
+] %}
+<div {{ attributes.addClass(classes) }}>
+    <div class="container">
+    	<h2 class="sc-highlight-title" style="background: #111; color: #fff; font-weight: 600; padding: 5px 20px; margin: 30px 0; max-width: 222px;">Past Exhibitions</h2>
+    	<div class="row">
+        {{ children }}
+    	</div>
+    </div>
+</div>
